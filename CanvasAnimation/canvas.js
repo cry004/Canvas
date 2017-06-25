@@ -39,9 +39,6 @@ function Circle(x,y,dx,dy,r,color){
 
     c.fillStyle = color;
     c.fill();
-
-
-
   }
   this.update = function(){
     if( this.x+this.r > innerWidth || this.x - this.r < 0){
@@ -67,7 +64,7 @@ function Circle(x,y,dx,dy,r,color){
 var circleArray = [];
 
 function init(){
-  circleArray.lngth = 0;
+  circleArray.length = 0;
   for(let i = 0; i <700; i++){
     var r = Math.random() * 15 + 1;
     var x = Math.random() * (innerWidth - r*2) + r;
@@ -88,4 +85,4 @@ function animation(){
   requestAnimationFrame(animation);
 }
 init();
-// animation();
+animation();
