@@ -24,7 +24,7 @@ window.addEventListener('resize',function(event){
 function Circle(x,y,dx,dy,r,color){
   this.x = x;
   this.y = y;
-  this.dx =dx ;
+  this.dx =dx;
   this.dy = dy;
   this.r = r;
   this.color = color;
