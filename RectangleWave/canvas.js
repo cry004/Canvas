@@ -16,8 +16,8 @@ window.addEventListener('resize',function(){
 });
 
 window.addEventListener('mousemove',function(e){
-  mouse.x = e.clinetX;
-  mouse.y = e.clienY;
+  mouse.x = e.clientX;
+  mouse.y = e.clientY;
 })
 
 
