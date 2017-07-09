@@ -19,6 +19,7 @@ c.lineTo(300,100);
 c.lineTo(400,300);
 c.strokeStyle = "#f00";
 c.stroke();
+c.closePath();
 
 //arc
 // c.beginPath();
