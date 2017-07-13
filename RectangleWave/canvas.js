@@ -6,8 +6,6 @@ var rw = 20;
 var barArray = [];
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-c.fillStyle = '#000';
-c.fillRect(0,0,canvas.width,canvas.height);
 
 window.addEventListener('resize',function(){
   canvas.width = window.innerWidth;
@@ -70,8 +68,9 @@ function init(){
 
 }
 function animation(){
-  c.fillStyle = 'rgba(0,0,0,0.1)';
-  c.fillRect(0,0,canvas.width,canvas.height);
+  // c.fillStyle = 'rgba(0,0,0,0.1)';
+  // c.fillRect(0,0,canvas.width,canvas.height);
+  c.clearRect(0, 0, canvas.width, canvas.height);
   barArray.forEach((bar)=>{
     bar.update();
   })
