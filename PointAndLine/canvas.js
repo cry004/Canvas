@@ -63,10 +63,16 @@ function animation(){
   points.sort(function(a,b){
     return b.y - a.y
   })
-  console.log(points)
-  // for(cc of points) {
-  //   cc.update();
-  // }
+  const start  = points.shift();
+
+  points.sort(function(a,b){
+    const tanA = Math.atan2(a.y - start.y, a.x - start.x)
+    const tanB = Math.atan2(b.y - start.y, b.x - start.x)
+    return tanB - tanA
+  });
+  for(cc of points) {
+    cc.update();
+  }
 }
 
 init();
